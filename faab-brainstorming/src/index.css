@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom smooth scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.6);
+  border-radius: 9999px;
+}
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(30, 41, 59, 0.7);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.8);
+  border-radius: 9999px;
+}
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.9);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 1);
+}
+
+/* Automatic high-contrast dark theme adaptation for utility classes inside .dark */
+.dark main {
+  background-color: #0b1120;
+  color: #e2e8f0;
+}
+
+.dark header {
+  background-color: #0f172a;
+  border-color: #1e293b;
+  color: #f8fafc;
+}
+
+.dark .bg-white {
+  background-color: #1e293b !important;
+  color: #f1f5f9;
+}
+
+.dark .bg-white\/95,
+.dark .bg-white\/80,
+.dark .bg-white\/50 {
+  background-color: rgba(30, 41, 59, 0.92) !important;
+  color: #f1f5f9;
+}
+
+.dark .bg-slate-50 {
+  background-color: #0f172a !important;
+}
+
+.dark .bg-slate-100 {
+  background-color: #162033 !important;
+}
+
+.dark .bg-slate-200,
+.dark .bg-slate-200\/60 {
+  background-color: #111827 !important;
+}
+
+.dark .text-slate-900,
+.dark .text-slate-800 {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-slate-700,
+.dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-slate-500,
+.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-300 {
+  border-color: #334155 !important;
+}
+
+/* Colored boxes in Dark Mode */
+.dark .bg-rose-50 {
+  background-color: rgba(136, 19, 55, 0.28) !important;
+}
+.dark .text-rose-950,
+.dark .text-rose-900,
+.dark .text-rose-800,
+.dark .text-rose-700 {
+  color: #fecdd3 !important;
+}
+.dark .border-rose-200,
+.dark .border-rose-300 {
+  border-color: rgba(244, 63, 94, 0.4) !important;
+}
+
+.dark .bg-orange-50,
+.dark .bg-orange-50\/70,
+.dark .bg-orange-100 {
+  background-color: rgba(124, 45, 18, 0.3) !important;
+}
+.dark .text-orange-950,
+.dark .text-orange-800,
+.dark .text-orange-700 {
+  color: #fed7aa !important;
+}
+.dark .border-orange-200,
+.dark .border-orange-300 {
+  border-color: rgba(249, 115, 22, 0.45) !important;
+}
+
+.dark .bg-amber-50,
+.dark .bg-amber-50\/70,
+.dark .bg-amber-50\/60 {
+  background-color: rgba(120, 53, 15, 0.3) !important;
+}
+.dark .text-amber-950,
+.dark .text-amber-800 {
+  color: #fde68a !important;
+}
+.dark .border-amber-200,
+.dark .border-amber-300 {
+  border-color: rgba(245, 158, 11, 0.45) !important;
+}
+
+.dark .bg-emerald-50,
+.dark .bg-emerald-50\/70,
+.dark .bg-emerald-50\/80,
+.dark .bg-emerald-100 {
+  background-color: rgba(6, 78, 59, 0.35) !important;
+}
+.dark .text-emerald-950,
+.dark .text-emerald-900,
+.dark .text-emerald-800,
+.dark .text-emerald-700 {
+  color: #a7f3d0 !important;
+}
+.dark .border-emerald-200,
+.dark .border-emerald-300 {
+  border-color: rgba(16, 185, 129, 0.45) !important;
+}
+
+.dark .bg-teal-50,
+.dark .bg-teal-50\/70 {
+  background-color: rgba(19, 78, 74, 0.35) !important;
+}
+.dark .text-teal-950,
+.dark .text-teal-800 {
+  color: #99f6e4 !important;
+}
+.dark .border-teal-200,
+.dark .border-teal-300 {
+  border-color: rgba(20, 184, 166, 0.45) !important;
+}
+
+.dark select option,
+.dark select optgroup {
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+/* Keep sticky notes in Brainstorming readable in dark mode */
+.dark .brainstorm-card .text-slate-900,
+.dark .brainstorm-card .text-slate-700 {
+  color: #1e293b !important;
+}
+.dark .brainstorm-card .text-emerald-950,
+.dark .brainstorm-card .text-emerald-800 {
+  color: #064e3b !important;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body, html, #root, .dark, .dark main, main {
+    height: auto !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+  .dark .bg-white,
+  .dark .bg-slate-50,
+  .dark .bg-slate-100 {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "FAAB Brainstorming Studio",
+  "description": "Espace de travail unifié de génération d'idées, d'analyse stratégique et de structuration de projets entrepreneuriaux.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

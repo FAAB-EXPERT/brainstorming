@@ -1,0 +1,56 @@
+{
+  "id": "./?app=faab-brainstorming",
+  "name": "FAAB Brainstorming Studio",
+  "short_name": "FAAB Brainstorming",
+  "description": "Espace de travail unifié de génération d'idées, d'analyse stratégique GAR et de structuration de projets entrepreneuriaux.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#14532d",
+  "theme_color": "#14532d",
+  "categories": [
+    "productivity",
+    "business",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "./assets/aistudio/logo_faab_brainstorming_e19b6c39.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/aistudio/logo_faab_brainstorming_e19b6c39.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/aistudio/logo_faab_brainstorming_e19b6c39.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/aistudio/logo_faab_brainstorming_e19b6c39.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/aistudio/logo_faab_brainstorming_e19b6c39.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

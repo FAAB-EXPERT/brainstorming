@@ -1,0 +1,6 @@
+{
+  "name": "FAAB GAR - Gestion Axée sur les Résultats",
+  "description": "Plateforme institutionnelle d'ingénierie méthodologique GAR : Brainstorming, Arbre à problèmes, Arbre à solutions, Intrants et Registre des parties prenantes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
